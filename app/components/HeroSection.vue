@@ -317,21 +317,22 @@ onUnmounted(() => {
   width: 380px;
   height: 480px;
   object-fit: cover;
-  border-radius: 40% 60% 60% 40% / 50% 50% 50% 50%;
+  border-radius: 50%;
   position: relative;
   z-index: 1;
   box-shadow:
-    0 0 60px rgba(255, 45, 120, 0.3),
+    0 0 60px rgba(255, 45, 120, 0.4),
+    0 0 120px rgba(180, 0, 255, 0.2),
     0 20px 60px rgba(0, 0, 0, 0.5);
   filter: brightness(1.05) contrast(1.05);
-  border: 2px solid rgba(255, 45, 120, 0.2);
 }
 
 /* Tech Stack Bar */
 .hero__techbar {
   background: rgba(15, 15, 32, 0.8);
-  border-top: 1px solid var(--border-pink);
-  border-bottom: 1px solid var(--border-pink);
+  box-shadow:
+    0 -1px 20px rgba(255, 45, 120, 0.2),
+    0 1px 20px rgba(255, 45, 120, 0.15);
   backdrop-filter: blur(10px);
   padding: 0;
   overflow: hidden;
@@ -353,12 +354,9 @@ onUnmounted(() => {
   font-size: 13px;
   font-weight: 600;
   color: var(--text-secondary);
-  border-right: 1px solid var(--border-subtle);
   transition: var(--transition);
   cursor: default;
 }
-
-.hero__tech-item:last-child { border-right: none; }
 
 .hero__tech-item:hover {
   color: var(--text-primary);
