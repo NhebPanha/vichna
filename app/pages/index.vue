@@ -8,6 +8,9 @@
     <EducationSection />
     <ContactSection />
 
+    <!-- AI Chat Widget -->
+    <AiChat />
+
     <!-- Back to top button -->
     <Transition name="fade">
       <button
